@@ -1,0 +1,22 @@
+.btn
+{
+    background-color: cornflowerblue;
+    font-size: 25px;
+    color: white;
+    border: 0px;
+    
+    padding: 15px;
+    margin: 5px;
+    width: 10%;
+    
+    
+}
+.counterValue{
+    font-size: 130px;
+   
+}
+
+span{
+    
+    color: red;
+}
