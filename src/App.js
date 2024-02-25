@@ -1,18 +1,12 @@
-
 import "./App.css";
-import SecondComponent from "./Components/SecondComponent";
-import FirstComponent  from "./Components/FirstComponent";
-import CounterComponent from "./CounterComponents/Counter";
+import TodoAppComponent from "./Components/TodoApp";
+
 function App() {
   return (
     <div className="App">
-      {/* <FirstComponent />
-      <SecondComponent/> */}
-      <CounterComponent/>
+      <TodoAppComponent />
     </div>
   );
 }
-
-
 
 export default App;
