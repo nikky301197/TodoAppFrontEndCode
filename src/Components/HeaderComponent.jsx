@@ -24,7 +24,7 @@ export default function HeaderComponent() {
   return (
     <header className="header-sec">
       <nav className="navbar navbar-expand-lg navbar-dark ">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="#" style={{fontWeight:"bold"}}>
           To-Do Application
         </a>
         <button
@@ -66,7 +66,7 @@ export default function HeaderComponent() {
           <form className="form-inline  my-1 my-lg-0 d-flex justify-content-center align-items-center">
             {!isAuthenticated && (
               <button
-                className="btn btn-outline-dark mr-lg-5  my-3 my-sm-0 m-3  font-weight-bold"
+                className="btn btn-dark mr-lg-5  my-3 my-sm-0 m-3  font-weight-bold"
                 type="submit"
                 onClick={loginFunction}
               >
@@ -76,7 +76,7 @@ export default function HeaderComponent() {
 
             {isAuthenticated && (
               <button
-                className="btn btn-outline-dark mr-lg-5 my-1 my-sm-0 m-0 font-weight-bold"
+                className="btn btn-dark mr-lg-5 my-1 my-sm-0 m-0 font-weight-bold"
                 type="submit"
                 onClick={logoutFunction}
               >
