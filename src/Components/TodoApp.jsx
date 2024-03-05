@@ -11,13 +11,15 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { AuthContext } from "./Security/Auth";
 import { useContext } from "react";
 import AuthProvider from "./Security/Auth";
+import UpdateTodoComponent from "./UpdateTodoComponent";
+import AddTodoComponent from "./AddTodoComponent";
 
 function ProtectedRoutes({ children }) {
- 
   const authContext = useContext(AuthContext);
-  if (authContext.isAuthenticated) return { children };
+  if (authContext.isAuthenticated) 
+  return children ;
 
-  return <Navigate to="/" />
+  return <Navigate to="/" />;
 }
 export default function TodoAppComponent() {
   return (
@@ -30,34 +32,43 @@ export default function TodoAppComponent() {
             <Route
               path="/welcome"
               element={
-                <ProtectedRoutes>
-                  {" "}
-                  <WelcomeComponent />{" "}
+                <ProtectedRoutes> <WelcomeComponent />
                 </ProtectedRoutes>
               }
             ></Route>
             <Route
               path="/todolist"
               element={
-                <ProtectedRoutes>
-                  <TodoListComponent />
+                <ProtectedRoutes> <TodoListComponent />
                 </ProtectedRoutes>
               }
             ></Route>
             <Route
               path="/logout"
               element={
-                <ProtectedRoutes>
-                  {" "}
-                  <LogoutComponent />{" "}
+                <ProtectedRoutes> <LogoutComponent />
+                </ProtectedRoutes>
+              }
+            ></Route>
+             <Route
+              path="/updateTodo/:todoid"
+              element={
+                <ProtectedRoutes> <UpdateTodoComponent />
+                </ProtectedRoutes>
+              }
+            ></Route>
+              <Route
+              path="/addtodo"
+              element={
+                <ProtectedRoutes> <AddTodoComponent/>
                 </ProtectedRoutes>
               }
             ></Route>
             <Route path="*" element={<ErrorComponent />}></Route>
           </Routes>
-          <FooterComponent />
+        
         </BrowserRouter>
       </AuthProvider>
     </div>
   );
-} 
+}

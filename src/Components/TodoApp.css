@@ -16,7 +16,7 @@
 form{
  
   
-margin-top : 50px;
+margin-top : 10px;
    padding-top : 20px;
    padding-bottom: 20px;
     
@@ -29,10 +29,11 @@ margin-top : 50px;
 }
 
 footer{
-    bottom: 0;
     position: fixed;
-    
+    height: 50px;
     width: 100%;
+   bottom: 0;
+    
 }
 
 .header-sec{
@@ -40,3 +41,8 @@ background-color: #7D82CE;
 color: white;
 
 }
+
+.boxshadow{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
