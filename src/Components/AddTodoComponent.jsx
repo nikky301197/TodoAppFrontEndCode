@@ -65,7 +65,7 @@ export default function AddTodoComponent() {
                 >
                   ADD{" "}
                   <span
-                    style={{ color: "navy", borderBottom: "1px solid grey" }}
+                    style={{ color: "#343A40", borderBottom: "1px solid grey" }}
                   >
                     TASK
                   </span>

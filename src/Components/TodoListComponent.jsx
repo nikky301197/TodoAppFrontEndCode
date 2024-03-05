@@ -43,9 +43,10 @@ export default function TodoListComponent() {
 
   return (
     <div className="todolist-sec container">
-      <h3 style={{ marginTop: "20px", fontWeight: "bold", color: "navy" }}>
+      <h4 style={{ marginTop: "20px", fontWeight: "bold", color: "#343A40" }}>
         Things You Want To Do!
-      </h3>
+        
+      </h4>
 
       <div className=" table-responsive-sm">
         <table

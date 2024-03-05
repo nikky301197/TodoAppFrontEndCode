@@ -11,13 +11,13 @@ export default function HeaderComponent() {
   function logoutFunction(event) {
     event.preventDefault();
     authContext.setAuthenticated(false);
-    console.log("logout function called");
+
     navigate("/logout");
   }
 
   function loginFunction(event) {
     event.preventDefault();
-    console.log("login function called");
+
     navigate("/");
   }
 
@@ -25,7 +25,7 @@ export default function HeaderComponent() {
     <header className="header-sec">
       <nav className="navbar navbar-expand-lg navbar-dark ">
         <a className="navbar-brand" href="#">
-          Todo Application
+          To-Do Application
         </a>
         <button
           className="navbar-toggler"
@@ -51,15 +51,22 @@ export default function HeaderComponent() {
             <li className="nav-item active">
               {isAuthenticated && (
                 <Link className="nav-link" to="/todolist">
-                  Todos
+                  View 
+                </Link>
+              )}
+            </li>
+            <li className="nav-item active">
+              {isAuthenticated && (
+                <Link className="nav-link" to="/addtodo">
+                  Add 
                 </Link>
               )}
             </li>
           </ul>
-          <form className="form-inline my-2 my-lg-0  ">
+          <form className="form-inline  my-1 my-lg-0 d-flex justify-content-center align-items-center">
             {!isAuthenticated && (
               <button
-                className="btn btn-outline-dark  my-2 my-sm-0 m-3 font-weight-bold"
+                className="btn btn-outline-dark mr-lg-5  my-3 my-sm-0 m-3  font-weight-bold"
                 type="submit"
                 onClick={loginFunction}
               >
@@ -69,17 +76,13 @@ export default function HeaderComponent() {
 
             {isAuthenticated && (
               <button
-                className="btn btn-outline-dark my-2 my-sm-0 m-3 font-weight-bold"
+                className="btn btn-outline-dark mr-lg-5 my-1 my-sm-0 m-0 font-weight-bold"
                 type="submit"
                 onClick={logoutFunction}
               >
                 LogOut
               </button>
             )}
-
-           
-
-
           </form>
         </div>
       </nav>

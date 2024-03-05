@@ -46,8 +46,8 @@ export default function LoginComponent() {
   return (
     <div className="login-sec">
       <form>
-        <h3 style={{ color: "navy", marginBottom: "25px", fontWeight: "bold" }}>
-          Welcome to Microsoft To Do{" "}
+        <h3 style={{ color: "#343A40", marginBottom: "25px", fontWeight: "bold" }}>
+          Welcome to Technosoft To-Do{" "}
         </h3>
         <div className="form-group">
           <label htmlFor="exampleInputEmail1">User name </label>{" "}
