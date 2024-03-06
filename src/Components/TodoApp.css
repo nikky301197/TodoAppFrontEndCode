@@ -24,6 +24,8 @@ footer {
   height: 50px;
   width: 100%;
   bottom: 0;
+ 
+ 
 }
 
 .header-sec {
@@ -35,7 +37,6 @@ footer {
 .boxshadow {
   box-shadow: rgba(76, 76, 172, 0.2) 0px 7px 29px 0px;
 }
-
 
 .welcomebox {
   margin-top: 30px;
@@ -56,60 +57,116 @@ footer {
   flex-direction: column;
 }
 
-@media screen and (max-width: 1300px){
-.todofrontImage
-{
-  width: 600px !important;
-  height: 350px !important; 
+@media screen and (max-width: 1300px) {
+  .todofrontImage {
+    width: 600px !important;
+    height: 350px !important;
+  }
+  .startedbtn {
+    width: 250px !important;
+  }
+  .loginImg 
+  {
+    width: 300px !important; 
+    height: 300px !important;
+  }
+  .noDataImg
+  {
+    width: 450px !important; 
+    height: 300px !important; 
   
-}
-.startedbtn
-{
-  width: 250px !important;
-}
+  }
+  #usernamefield , #passwordfield
+  {
+   width: 250px !important;
+ }
 }
 
-@media screen and (max-width: 992px)  {
-  .todofrontImage 
-  {
+@media screen and (max-width: 992px) {
+  .todofrontImage {
     width: 500px !important;
     height: 400px !important;
-   
   }
+  .loginImg
+  {
+    width: 300px !important; 
+    height: 300px !important;
+  }
+  #usernamefield , #passwordfield
+  {
+   width: 250px !important;
+ }
 }
 
-@media screen and  (max-width: 768px)  {
-  .todofrontImage
-  {
+@media screen and (max-width: 768px) {
+  .todofrontImage {
     margin-top: 30px !important;
     width: 500px !important;
     height: 400px !important;
-   
   }
+  .loginImg
+  {
+    width: 300px !important; 
+    height: 300px !important;
+    opacity: 0.7 !important ;
+  }
+  #usernamefield , #passwordfield
+  {
+   width: 250px !important;
+ }
 }
 
-@media screen and  (max-width:  576px)  {
-  .todofrontImage
-  {
+@media screen and (max-width: 576px) {
+  .todofrontImage {
     width: 400px !important;
     height: 350px !important;
-   
   }
+  #usernamefield , #passwordfield
+  {
+   width: 250px !important;
+ }
+ .todoFrontSecBox2
+ {
+  margin-top: 40px !important;
+   
+ }
+ .loginImg
+ {
+   width: 200px !important; 
+   height: 200px !important;
+   opacity: 0.7;
+ }
 }
 
-@media screen and (max-width: 480px)  {
-  .todofrontImage
-  {
+@media screen and (max-width: 480px) {
+  .todofrontImage {
     margin-top: 50px !important;
     width: 300px !important;
     height: 350px !important;
-   
   }
-  .startedbtn
-  {
+  .startedbtn {
     width: 180px !important;
     font-size: 16px !important;
   }
-}
+  .createAccountHeading {
+    font-size: 22px !important;
+  }
+  #usernamefield , #passwordfield
+   {
+    width: 170px !important;
+  }
 
+  .todoFrontSecBox2
+  {
+   
+    margin-top: 30px;
+  }
  
+  .loginImg
+  {
+    width: 200px !important; 
+    height: 200px !important;
+    opacity: 0.6 !important;
+  }
+}
+/* footer csss */

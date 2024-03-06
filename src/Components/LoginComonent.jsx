@@ -44,8 +44,14 @@ export default function LoginComponent() {
   };
 
   return (
-    <div className="login-sec">
-      <form>
+    <div className="loginSec container p-5">
+      <div className="row  " style={{ boxShadow:"#FB945A 4px 3px 2px"
+        }}>
+     <div className="col-md-6 col-2 ">
+     <img className="loginImg" src="images/Login-amico.png" ></img>
+     </div>
+     <div className="col-md-6 col-10">
+     <form>
         <h3 style={{ color: "#343A40", marginBottom: "25px", fontWeight: "bold" }}>
           LOG IN{" "}
         </h3>
@@ -58,6 +64,7 @@ export default function LoginComponent() {
             aria-describedby="emailHelp"
             placeholder="Enter username"
             onChange={saveUsername}
+            style={{width:250}}
           />
           {/* <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> */}
         </div>
@@ -66,11 +73,12 @@ export default function LoginComponent() {
           <input
             type="password"
             className="form-control inputField"
-            id="exampleInputPassword1"
+            id="passwordfield"
             placeholder="Password"
             onChange={(event) => {
               setPassword(event.target.value);
             }}
+            style={{width:250}}
           />
         </div>
 
@@ -92,7 +100,12 @@ export default function LoginComponent() {
           )}
         </div>
       </form>
-      <FooterComponent/>
+     </div>
+
+      </div>
+     
+      
+      {/* <FooterComponent/> */}
     </div>
    
   );
