@@ -29,11 +29,13 @@ footer {
 .header-sec {
   background-color: #fa7529c5;
   color: white;
+  /* height: 80px; */
 }
 
 .boxshadow {
   box-shadow: rgba(76, 76, 172, 0.2) 0px 7px 29px 0px;
 }
+
 
 .welcomebox {
   margin-top: 30px;
@@ -53,3 +55,61 @@ footer {
   align-items: center;
   flex-direction: column;
 }
+
+@media screen and (max-width: 1300px){
+.todofrontImage
+{
+  width: 600px !important;
+  height: 350px !important; 
+  
+}
+.startedbtn
+{
+  width: 250px !important;
+}
+}
+
+@media screen and (max-width: 992px)  {
+  .todofrontImage 
+  {
+    width: 500px !important;
+    height: 400px !important;
+   
+  }
+}
+
+@media screen and  (max-width: 768px)  {
+  .todofrontImage
+  {
+    margin-top: 30px !important;
+    width: 500px !important;
+    height: 400px !important;
+   
+  }
+}
+
+@media screen and  (max-width:  576px)  {
+  .todofrontImage
+  {
+    width: 400px !important;
+    height: 350px !important;
+   
+  }
+}
+
+@media screen and (max-width: 480px)  {
+  .todofrontImage
+  {
+    margin-top: 50px !important;
+    width: 300px !important;
+    height: 350px !important;
+   
+  }
+  .startedbtn
+  {
+    width: 180px !important;
+    font-size: 16px !important;
+  }
+}
+
+ 

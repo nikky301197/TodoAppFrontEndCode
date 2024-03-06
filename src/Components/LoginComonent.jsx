@@ -21,7 +21,7 @@ export default function LoginComponent() {
   const verifyUsernamePassword = async (event) => {
     event.preventDefault();
     try {
-      let response = await axios.post("http://localhost:8080/todoapi/v1/", {
+      let response = await axios.put("http://localhost:8080/todoapi/v1/", {
         username,
         password,
       });
@@ -47,7 +47,7 @@ export default function LoginComponent() {
     <div className="login-sec">
       <form>
         <h3 style={{ color: "#343A40", marginBottom: "25px", fontWeight: "bold" }}>
-          Welcome to Technosoft To-Do{" "}
+          LOG IN{" "}
         </h3>
         <div className="form-group">
           <label htmlFor="exampleInputEmail1">User name </label>{" "}

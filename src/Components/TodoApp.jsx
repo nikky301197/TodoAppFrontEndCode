@@ -13,6 +13,8 @@ import { useContext } from "react";
 import AuthProvider from "./Security/Auth";
 import UpdateTodoComponent from "./UpdateTodoComponent";
 import AddTodoComponent from "./AddTodoComponent";
+import TodoFrontComponent from "./TodoFrontComponent";
+import RegisterComponent from "./RegisterComponent";
 
 function ProtectedRoutes({ children }) {
   const authContext = useContext(AuthContext);
@@ -28,7 +30,9 @@ export default function TodoAppComponent() {
         <BrowserRouter>
           <HeaderComponent />
           <Routes>
-            <Route path="/" element={<LoginComponent />}></Route>
+          <Route path="/" element={<TodoFrontComponent />}></Route>
+            <Route path="/login" element={<LoginComponent />}></Route>
+            <Route path="/register" element={<RegisterComponent />}></Route>
             <Route
               path="/welcome"
               element={

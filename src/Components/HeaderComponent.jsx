@@ -12,21 +12,39 @@ export default function HeaderComponent() {
     event.preventDefault();
     authContext.setAuthenticated(false);
 
-    navigate("/logout");
+    navigate("/login");
   }
 
   function loginFunction(event) {
     event.preventDefault();
 
-    navigate("/");
+    navigate("/login");
+  }
+
+  function registerFunction(event) {
+    event.preventDefault();
+
+    navigate("/register");
   }
 
   return (
     <header className="header-sec">
       <nav className="navbar navbar-expand-lg navbar-dark ">
-        <a className="navbar-brand" href="#" style={{fontWeight:"bold"}}>
+        <Link
+          className="navbar-brand"
+          href="#"
+          style={{
+            fontWeight: "bold",
+            color: "#343A40",
+            fontSize: 22,
+
+            marginLeft: 10,
+            marginRight: 50,
+          }}
+          to="/"
+        >
           To-Do Application
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -51,14 +69,14 @@ export default function HeaderComponent() {
             <li className="nav-item active">
               {isAuthenticated && (
                 <Link className="nav-link" to="/todolist">
-                  View 
+                  View
                 </Link>
               )}
             </li>
             <li className="nav-item active">
               {isAuthenticated && (
                 <Link className="nav-link" to="/addtodo">
-                  Add 
+                  Add
                 </Link>
               )}
             </li>
@@ -66,11 +84,21 @@ export default function HeaderComponent() {
           <form className="form-inline  my-1 my-lg-0 d-flex justify-content-center align-items-center">
             {!isAuthenticated && (
               <button
-                className="btn btn-dark mr-lg-5  my-3 my-sm-0 m-3  font-weight-bold"
+                className="btn btn-dark mr-lg-4  my-3 my-sm-0 m-3  font-weight-bold"
                 type="submit"
                 onClick={loginFunction}
               >
-                LogIn
+                Log In
+              </button>
+            )}
+
+            {!isAuthenticated && (
+              <button
+                className="btn btn-dark mr-lg-4  my-3 my-sm-0 m-3  font-weight-bold"
+                type="submit"
+                onClick={registerFunction}
+              >
+                Register
               </button>
             )}
 
@@ -80,7 +108,7 @@ export default function HeaderComponent() {
                 type="submit"
                 onClick={logoutFunction}
               >
-                LogOut
+                Log Out
               </button>
             )}
           </form>
