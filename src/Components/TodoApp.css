@@ -140,7 +140,7 @@ footer {
 
 @media screen and (max-width: 480px) {
 
-  .loginSec
+  .loginSec , .registerSec
   {
     position: absolute;
   top: 50%;

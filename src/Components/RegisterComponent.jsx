@@ -41,7 +41,7 @@ export default function RegisterComponent() {
   }
   
   return (
-    <div className="resgister-sec container  p-5 mt-lg-1 mt-md-5 mt-5">
+    <div className="registerSec container  p-5 ">
       <div className="row " style={{ boxShadow:"#FB945A 4px 3px 2px"
         }}>
       <div className="col-md-6 col-2 ">
@@ -81,11 +81,6 @@ export default function RegisterComponent() {
             }}
           />
         </div>
-
-        <button type="submit" className="btn btn-dark mt-md-1 mt-5" onClick={registerUser}>
-          Register
-        </button>
-
         <div style={{ marginTop: "10px" }}>
           {userVerification ? (
             <small style={{ color: "red", fontSize: "15px" }}>{errorMsg}</small>
@@ -93,6 +88,11 @@ export default function RegisterComponent() {
             <small style={{ color: "navy", fontSize: "17px" }}></small>
           )}
         </div>
+        <button type="submit" className="btn btn-dark mt-md-1 mt-5" onClick={registerUser}>
+          Register
+        </button>
+
+       
       </form>
       </div>
       </div>

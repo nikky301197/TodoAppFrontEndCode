@@ -44,7 +44,7 @@ export default function LoginComponent() {
   };
 
   return (
-    <div className="loginSec container p-5 border ">
+    <div className="loginSec container p-5  ">
       <div className="row  " style={{ boxShadow:"#FB945A 4px 3px 2px"
         }}>
      <div className="col-md-6 col-2 ">
@@ -81,15 +81,6 @@ export default function LoginComponent() {
             style={{width:250}}
           />
         </div>
-
-        <button
-          type="submit"
-          className="btn btn-dark mt-md-1 mt-5"
-          onClick={verifyUsernamePassword}
-        >
-          Login
-        </button>
-
         <div style={{ marginTop: "10px" }}>
           {userauth ? (
             <small style={{ color: "red", fontSize: "15px" }}>
@@ -99,6 +90,15 @@ export default function LoginComponent() {
             <small style={{ color: "navy", fontSize: "17px" }}></small>
           )}
         </div>
+        <button
+          type="submit"
+          className="btn btn-dark mt-md-1 mt-5"
+          onClick={verifyUsernamePassword}
+        >
+          Login
+        </button>
+
+        
       </form>
      </div>
 
