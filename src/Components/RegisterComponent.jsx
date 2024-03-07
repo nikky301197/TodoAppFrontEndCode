@@ -41,7 +41,7 @@ export default function RegisterComponent() {
   }
   
   return (
-    <div className="resgister-sec container  p-5">
+    <div className="resgister-sec container  p-5 mt-4">
       <div className="row " style={{ boxShadow:"#FB945A 4px 3px 2px"
         }}>
       <div className="col-md-6 col-2 ">
