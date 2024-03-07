@@ -84,10 +84,10 @@ export default function LoginComponent() {
 
         <button
           type="submit"
-          className="btn btn-dark"
+          className="btn btn-dark mt-md-1 mt-5"
           onClick={verifyUsernamePassword}
         >
-          Submit
+          Login
         </button>
 
         <div style={{ marginTop: "10px" }}>

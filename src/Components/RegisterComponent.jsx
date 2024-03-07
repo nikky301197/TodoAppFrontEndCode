@@ -82,7 +82,7 @@ export default function RegisterComponent() {
           />
         </div>
 
-        <button type="submit" className="btn btn-dark" onClick={registerUser}>
+        <button type="submit" className="btn btn-dark mt-md-1 mt-5" onClick={registerUser}>
           Register
         </button>
 

@@ -170,3 +170,19 @@ footer {
   }
 }
 /* footer csss */
+
+@media screen and (max-width: 400px) {
+  .todofrontImage {
+    margin-top: 50px !important;
+    width: 300px !important;
+    height: 300px !important;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .todofrontImage {
+    margin-top: 50px !important;
+    width: 200px !important;
+    height: 200px !important;
+  }
+}
