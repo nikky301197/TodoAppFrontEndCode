@@ -77,10 +77,10 @@ export default function UpdateTodoComponent() {
   }
 
   return (
-    <div className="updatetodo-sec container ">
+    <div className="updatetodoSec  pt-md-0 pt-4  container ">
       <section>
         <div className="container ">
-          <div className="row mt-lg-5 mt-sm-3 boxshadow">
+          <div className="row mt-5 boxshadow">
             <div className="col">
               <form>
                 <h4

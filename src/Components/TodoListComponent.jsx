@@ -47,7 +47,7 @@ export default function TodoListComponent() {
   return (
     <div className="todolist-sec container">
       {todolist.length == 0 ? (
-        <div className="d-flex flex-column justifiy-content-center align-items-center">
+        <div className="noDataSec  d-flex flex-column justifiy-content-center align-items-center">
           <h4
             style={{ marginTop: "20px", fontWeight: "bold", color: "#343A40" }}
           >
@@ -69,7 +69,7 @@ export default function TodoListComponent() {
            <h4
             style={{ marginTop: "20px", fontWeight: "bold", color: "#343A40" }}
           >
-            Things you want to do !
+            THINGS TO DO!!
           </h4>
           <table
             className="table table-dark table-striped"
@@ -100,19 +100,20 @@ export default function TodoListComponent() {
                   </td>
                   <td>
                     <button
-                      className="btn btn-success"
+                      className="btn"
                       onClick={() => updateTodo(todo.todoId)}
                     >
-                      Update
+                      <img src="icons/pen_10263603.png" height={23} width={23}></img>
                     </button>
                   </td>
                   <td>
                     <button
-                      className="btn btn-danger"
+                      className="btn "
                       style={{ color: "white" }}
                       onClick={() => deletetodo(todo.todoId)}
                     >
-                      Delete
+                      
+                      <img src="icons/delete_6861358.png" height={23} width={23}></img>
                     </button>
                   </td>
                 </tr>

@@ -51,10 +51,10 @@ export default function AddTodoComponent() {
   }
 
   return (
-    <div className="addtodo-sec">
+    <div className="addtodoSec pt-md-0 pt-4" >
       <section>
         <div className="container ">
-          <div className="row  mt-lg-5 mt-sm-3 boxshadow">
+          <div className="row   mt-5 boxshadow">
             <div className="col">
               <form>
                 <h4

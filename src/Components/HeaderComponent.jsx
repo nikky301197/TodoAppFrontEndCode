@@ -37,13 +37,15 @@ export default function HeaderComponent() {
             fontWeight: "bold",
             color: "#343A40",
             fontSize: 22,
-
+         
             marginLeft: 10,
             marginRight: 50,
           }}
           to="/"
         >
-          To-Do Application
+           <img src="icons/check_14610735.png" height={45} width={45}></img>
+           {" "} To-Do App
+         
         </Link>
         <button
           className="navbar-toggler"
