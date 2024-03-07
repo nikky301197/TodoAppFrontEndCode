@@ -139,6 +139,15 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+
+  .loginSec
+  {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  }
   .todofrontImage {
     margin-top: 50px !important;
     width: 400px !important;
