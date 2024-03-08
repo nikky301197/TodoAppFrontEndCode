@@ -60,7 +60,7 @@ export default function HeaderComponent() {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto">
+          <ul className="navbar-nav mr-auto" style={{fontSize:17}}>
             <li className="nav-item active">
               {isAuthenticated && (
                 <Link className="nav-link" to="/welcome">
